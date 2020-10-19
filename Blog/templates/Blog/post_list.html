@@ -1,18 +1,47 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>DevHyun's blog</title>
-    </head>
-    <body>
-        <div>
-            <h1><a href="">DevHyun's Blog</a></h1>
-        </div>
-        {% for post in posts %}
-        <div>
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-        {% endfor %}
-    </body>
-</html>
+{% extends 'Blog/base.html' %}
+
+{% block content %}
+{% for post in posts %}
+<div class="post">
+    <div class="date">
+        <p>published: {{ post.published_date }}</p>
+    </div>
+    <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+    <p>{{ post.text|linebreaksbr }}</p>
+</div>
+{% endfor %}
+{% endblock %}
+
+<!--<!DOCTYPE html>-->
+<!--{% load static %}-->
+<!--<html>-->
+<!--    <head>-->
+<!--        <title>DevHyun's blog</title>-->
+<!--        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
+<!--        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">-->
+<!--&lt;!&ndash;    <link rel="stylesheet" href="{% static '/home/devhyun/DevhyunDjangoBlog/Blog/static/css/Blog.css' %}">    &ndash;&gt;-->
+<!--        <link rel="stylesheet" href="{% static 'css/Blog.css' %}">-->
+
+<!--        <link href="//fonts.googleapis.com/css?family=Anton&subset=latin,latin-ext" rel="stylesheet" type="text/css">-->
+<!--    </head>-->
+<!--    <body>-->
+<!--        <div class ="page-header">-->
+<!--            <h1><a href="">DevHyun's Blog</a></h1>-->
+<!--        </div>-->
+<!--        <div class="content container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-md-8">-->
+<!--                    {% for post in posts %}-->
+<!--                        <div class="post">-->
+<!--                            <div class="date">-->
+<!--                                <p>published: {{ post.published_date }}</p>-->
+<!--                            </div>-->
+<!--                            <h1><a href="">{{ post.title }}</a></h1>-->
+<!--                            <p>{{ post.text|linebreaksbr }}</p>-->
+<!--                        </div>-->
+<!--                    {% endfor %}-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </body>-->
+<!--</html>-->
