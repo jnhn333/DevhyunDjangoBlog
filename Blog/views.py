@@ -4,7 +4,6 @@ from .models import Post
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 from django.shortcuts import redirect
-import webbrowser
 # Create your views here.
 
 def post_list(request):
@@ -42,4 +41,4 @@ def post_edit(request, pk):
         form = PostForm(instance=post)
     return render(request, 'Blog/post_edit.html', {'form': form})
 
-def admin(request): return webbrowser.open("http://stackoverflow.com")
+def admin(request): return ("")
