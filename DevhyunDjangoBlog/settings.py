@@ -20,8 +20,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
-with open("/home/devhyun/DevhyunDjangoBlog/secret.json","r") as f:
-#with open("secret.json") as f:
+#with open("/home/devhyun/DevhyunDjangoBlog/secret.json","r") as f:
+with open("secret.json") as f:
     secrets = json.loads(f.read())
 def get_secret(setting, secrets=secrets):
     try :
@@ -85,26 +85,26 @@ WSGI_APPLICATION = 'DevhyunDjangoBlog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': str(BASE_DIR / 'db.sqlite3'),
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'devhyun$devhyun',
-        'USER': 'devhyun',
-        'PASSWORD': 'gusl5288',
-        'HOST': 'devhyun.mysql.pythonanywhere-services.com',
-        'PORT':	'3306'
-    },
-    'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-        },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': str(BASE_DIR / 'db.sqlite3'),
+    }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'devhyun$devhyun',
+#         'USER': 'devhyun',
+#         'PASSWORD': 'gusl5288',
+#         'HOST': 'devhyun.mysql.pythonanywhere-services.com',
+#         'PORT':	'3306'
+#     },
+#     'OPTIONS': {
+#             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+#         },
+# }
 
 
 # Password validation
