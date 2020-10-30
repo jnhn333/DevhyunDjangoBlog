@@ -1,0 +1,71 @@
+[33mcommit 68235e92940ea09fc5af3f0a4b59406c5d73b25a[m
+Reflog: HEAD@{0} (devhyun <d3vhyun@gmail.com>)
+Reflog message: reset: moving to 68235e92940ea09fc5af3f0a4b59406c5d73b25a
+Author: KPIC-PJHPC <d3vhyun@gmail.com>
+Date:   Tue Oct 27 19:37:19 2020 +0900
+
+    develop Blog!
+
+[33mcommit 7a871a239514f1bf7d81c160277383bf66389c30[m
+Reflog: HEAD@{1} (devhyun <d3vhyun@gmail.com>)
+Reflog message: pull: Fast-forward
+Author: KPIC-PJHPC <d3vhyun@gmail.com>
+Date:   Tue Oct 27 22:31:57 2020 +0900
+
+    reply!
+
+[33mcommit 68235e92940ea09fc5af3f0a4b59406c5d73b25a[m
+Reflog: HEAD@{2} (devhyun <d3vhyun@gmail.com>)
+Reflog message: pull: Fast-forward
+Author: KPIC-PJHPC <d3vhyun@gmail.com>
+Date:   Tue Oct 27 19:37:19 2020 +0900
+
+    develop Blog!
+
+[33mcommit 03c59cac7b4319944c1dc5214b98ee916864dede[m
+Reflog: HEAD@{3} (devhyun <d3vhyun@gmail.com>)
+Reflog message: pull: Fast-forward
+Author: KPIC-PJHPC <d3vhyun@gmail.com>
+Date:   Wed Oct 21 20:27:00 2020 +0900
+
+    admin page link
+
+[33mcommit 48e9b67728412c4d6bdf8fa72835e79a384549a1[m
+Reflog: HEAD@{4} (devhyun <d3vhyun@gmail.com>)
+Reflog message: pull: Fast-forward
+Author: KPIC-PJHPC <d3vhyun@gmail.com>
+Date:   Wed Oct 21 19:51:19 2020 +0900
+
+    modify, post, Security!
+
+[33mcommit 924d32e352aa4afeb901ddafc288037e0c519bf5[m
+Reflog: HEAD@{5} (devhyun <d3vhyun@gmail.com>)
+Reflog message: pull: Fast-forward
+Author: KPIC-PJHPC <d3vhyun@gmail.com>
+Date:   Mon Oct 19 18:05:53 2020 +0900
+
+    page link, CSS Change
+
+[33mcommit 7c01e5bc2707297ca7ac17e279fff9909467b970[m
+Reflog: HEAD@{6} (devhyun <d3vhyun@gmail.com>)
+Reflog message: pull: Fast-forward
+Author: KPIC-PJHPC <d3vhyun@gmail.com>
+Date:   Mon Oct 19 15:27:53 2020 +0900
+
+    views.py return path
+
+[33mcommit 6ef767785bf31209bb7714f951d9a429d586df35[m
+Reflog: HEAD@{7} (devhyun <devhyun@8e86bfb0e784>)
+Reflog message: pull: Fast-forward
+Author: KPIC-PJHPC <d3vhyun@gmail.com>
+Date:   Fri Oct 16 19:19:17 2020 +0900
+
+    Templates!
+
+[33mcommit 7aec2750ca445c22c2dc755f07faae9f8368cd83[m
+Reflog: HEAD@{8} (devhyun <devhyun@8e86bfb0e784>)
+Reflog message: clone: from https://github.com/jnhn333/DevhyunDjangoBlog.git
+Author: KPIC-PJHPC <d3vhyun@gmail.com>
+Date:   Fri Oct 16 19:04:05 2020 +0900
+
+    Templates!
