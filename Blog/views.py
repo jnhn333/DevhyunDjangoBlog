@@ -23,8 +23,8 @@ def post_new(request):
         form = PostForm(request.POST)
         if form.is_valid():
             post = form.save(commit=False)
-            #post.author = request.user
-            post.author = get_user_model().objects.get(username='admin')
+            post.author = request.user
+            #post.author = get_user_model().objects.get(username='admin')
             post.save()
             return redirect('post_detail', pk=post.pk)
     else:
@@ -37,8 +37,8 @@ def post_edit(request, pk):
         form = PostForm(request.POST, instance=post)
         if form.is_valid():
             post = form.save(commit=False)
-            #post.author = request.user
-            post.author = get_user_model().objects.get(username='admin')
+            post.author = request.user
+            #post.author = get_user_model().objects.get(username='admin')
             post.save()
             return redirect('post_detail', pk=post.pk)
     else:
